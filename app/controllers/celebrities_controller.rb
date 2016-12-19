@@ -5,8 +5,8 @@ class CelebritiesController < ApplicationController
 	def show
 		puts "we are in the show action"
 		puts "the params are #{params.inspect}"
-		puts "#{params[:yolo]}"
-		@celebrity = Celebrity.find(params[:yolo])
+		puts "#{params[:id]}"
+		@celebrity = Celebrity.find(params[:id])
 		puts "the celebrity is #{@celebrity.inspect}"
 	end
 end
