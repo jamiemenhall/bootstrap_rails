@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get 'home', to: 'landing_pages#home'
   get 'about_us', to: 'landing_pages#about_us'
   get 'celebrities', to: 'celebrities#index'
+  get 'celebrities/new', to: 'celebrities#new'
   get 'celebrities/:id', to: 'celebrities#show'
+
 end

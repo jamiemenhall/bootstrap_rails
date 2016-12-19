@@ -9,4 +9,6 @@ class CelebritiesController < ApplicationController
 		@celebrity = Celebrity.where('name' => params['id']).take
 		puts "the celebrity is #{@celebrity.inspect}"
 	end
+	def new
+	end
 end
