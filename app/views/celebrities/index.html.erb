@@ -1,8 +1,9 @@
 yay celebrities!
-
-<ul>
+<div class='container'>
+<ul class="list-group">
 	<% @celebrities.each do |c| %>
-		<li><%= c.name %></li>
+		<li class="list-group-item"><%= c.name %></li>
 	<% end %>
 </ul>
+</div>
 
