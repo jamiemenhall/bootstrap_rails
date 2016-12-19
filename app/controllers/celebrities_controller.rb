@@ -10,5 +10,6 @@ class CelebritiesController < ApplicationController
 		puts "the celebrity is #{@celebrity.inspect}"
 	end
 	def new
+		@celebrity = Celebrity.new
 	end
 end

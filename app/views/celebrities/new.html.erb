@@ -1,1 +1,8 @@
 blah
+
+<%= simple_form_for @celebrity do |f| %>
+  <%= f.input :name %>
+  <%= f.input :celebrity_rating %>
+  <%= f.input :category %>
+  <%= f.button :submit %>
+<% end %>
